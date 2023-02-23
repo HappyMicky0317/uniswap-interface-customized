@@ -11,7 +11,7 @@ export default function useAccountRiskCheck(account: string | null | undefined) 
     if (account) {
       const riskCheckLocalStorageKey = `risk-check-${account}`
       const now = Date.now()
-      // testsdfsdfsdfsdfsdfsdfsdf
+      // testsdfsdfsdfsdfsdfsdfsd
       try {
         const storedTime = localStorage.getItem(riskCheckLocalStorageKey)
         const checkExpirationTime = storedTime ? parseInt(storedTime) : now - 1
